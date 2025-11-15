@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Teste seus conhecimentos — Hidratação e Água</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Estilos mínimos específicos do quiz (não alteram tema global) */
+    .quiz-container { padding: 24px 0; }
+    .question { margin-bottom: 18px; padding: 14px; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .question h4 { margin: 0 0 8px 0; color: #0a3d62; font-size: 1.03rem; }
+    .options { display:block; gap:8px; }
+    .options label { display:block; padding:8px 10px; border-radius:8px; cursor:pointer; }
+    .options input { margin-right:10px; }
+    .controls { margin-top: 18px; display:flex; gap:12px; flex-wrap:wrap; }
+    .result-box { margin-top:18px; padding:14px; border-radius:10px; background:#eaf7ff; border-left:4px solid #1e90ff; }
+    .correct { background: #e6f7ea !important; border-left: 4px solid #2ea44f !important; }
+    .incorrect { background: #ffecec !important; border-left: 4px solid #d73a49 !important; }
+    .answer-key { margin-top:10px; font-size:0.95rem; }
+    .small-note { font-size:0.92rem; opacity:0.85; }
+    @media (max-width:700px) { .question { padding:12px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <h1 class="site-title">Teste seus conhecimentos</h1>
+      <nav aria-label="Menu principal">
+        <ul class="main-menu">
+          <li><a href="index.html">Hidratação e Saúde</a></li>
+          <li><a href="tratamento.html">Tratamento de Água</a></li>
+          <li><a href="#calculadora" onclick="location.href='index.html#calculadora'">Quanto devo beber?</a></li>
+          <li><a href="quiz.html" aria-current="page">Teste seus conhecimentos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container quiz-container">
+    <section class="section">
+      <h2>Quiz — Hidratação e Tratamento de Água</h2>
+      <p class="small-note">Responda às 30 perguntas abaixo. Cada pergunta tem cinco alternativas (A–E). No final clique em <strong>Enviar</strong> para ver sua pontuação.</p>
+
+      <form id="quizForm" novalidate>
+        <!-- Perguntas -->
+        <!-- Para manter o arquivo legível, cada questão é um fieldset com radio buttons nomeados q1..q30 -->
+        
+        <!-- 1 -->
+        <fieldset class="question" id="q1">
+          <h4>1. Qual é uma das funções da água no organismo mencionadas no portal?</h4>
+          <div class="options">
+            <label><input type="radio" name="q1" value="A"> A) Produção de anticorpos exclusivamente</label>
+            <label><input type="radio" name="q1" value="B"> B) Regulação térmica via suor e evaporação</label>
+            <label><input type="radio" name="q1" value="C"> C) Produção de insulina</label>
+            <label><input type="radio" name="q1" value="D"> D) Formação de tecido adiposo</label>
+            <label><input type="radio" name="q1" value="E"> E) Bloqueio da absorção de nutrientes</label>
+          </div>
+        </fieldset>
+
+        <!-- 2 -->
+        <fieldset class="question" id="q2">
+          <h4>2. Qual sinal é considerado leve a moderado de desidratação?</h4>
+          <div class="options">
+            <label><input type="radio" name="q2" value="A"> A) Sangramento nasal</label>
+            <label><input type="radio" name="q2" value="B"> B) Boca seca e saliva mais espessa</label>
+            <label><input type="radio" name="q2" value="C"> C) Perda completa da visão</label>
+            <label><input type="radio" name="q2" value="D"> D) Perda de membros</label>
+            <label><input type="radio" name="q2" value="E"> E) Aumento súbito da audição</label>
+          </div>
+        </fieldset>
+
+        <!-- 3 -->
+        <fieldset class="question" id="q3">
+          <h4>3. Uma consequência moderada a grave da desidratação é:</h4>
+          <div class="options">
+            <label><input type="radio" name="q3" value="A"> A) Aumento do apetite</label>
+            <label><input type="radio" name="q3" value="B"> B) Taquicardia e queda da pressão arterial</label>
+            <label><input type="radio" name="q3" value="C"> C) Crescimento de unhas mais rápidas</label>
+            <label><input type="radio" name="q3" value="D"> D) Aceleração do crescimento capilar</label>
+            <label><input type="radio" name="q3" value="E"> E) Melhora na memória</label>
+          </div>
+        </fieldset>
+
+        <!-- 4 -->
+        <fieldset class="question" id="q4">
+          <h4>4. Qual efeito sutil e cumulativo da perda leve repetida de líquidos foi citado?</h4>
+          <div class="options">
+            <label><input type="radio" name="q4" value="A"> A) Aumento da capacidade respiratória</label>
+            <label><input type="radio" name="q4" value="B"> B) Redução da produtividade e impacto no aprendizado</label>
+            <label><input type="radio" name="q4" value="C"> C) Crescimento muscular instantâneo</label>
+            <label><input type="radio" name="q4" value="D"> D) Imunidade imediata contra vírus</label>
+            <label><input type="radio" name="q4" value="E"> E) Diminuição da sensibilidade ao sal</label>
+          </div>
+        </fieldset>
+
+        <!-- 5 -->
+        <fieldset class="question" id="q5">
+          <h4>5. Qual grupo tem maior risco porque a sede pode ser um sinal tardio?</h4>
+          <div class="options">
+            <label><input type="radio" name="q5" value="A"> A) Trabalhadores de escritório</label>
+            <label><input type="radio" name="q5" value="B"> B) Crianças</label>
+            <label><input type="radio" name="q5" value="C"> C) Pessoas com visão perfeita</label>
+            <label><input type="radio" name="q5" value="D"> D) Motoristas profissionais</label>
+            <label><input type="radio" name="q5" value="E"> E) Pessoas com alimentação rica em sal</label>
+          </div>
+        </fieldset>
+
+        <!-- 6 -->
+        <fieldset class="question" id="q6">
+          <h4>6. Qual método simples é citado para acompanhar o estado hídrico?</h4>
+          <div class="options">
+            <label><input type="radio" name="q6" value="A"> A) Medir a pressão ocular</label>
+            <label><input type="radio" name="q6" value="B"> B) Ver a cor da urina</label>
+            <label><input type="radio" name="q6" value="C"> C) Contar passos dados por dia</label>
+            <label><input type="radio" name="q6" value="D"> D) Teste de audição</label>
+            <label><input type="radio" name="q6" value="E"> E) Medir a altura diariamente</label>
+          </div>
+        </fieldset>
+
+        <!-- 7 -->
+        <fieldset class="question" id="q7">
+          <h4>7. Segundo o portal, quantas idas ao banheiro por dia são comuns em adultos bem hidratados?</h4>
+          <div class="options">
+            <label><input type="radio" name="q7" value="A"> A) 0–1 vezes</label>
+            <label><input type="radio" name="q7" value="B"> B) 4–8 vezes</label>
+            <label><input type="radio" name="q7" value="C"> C) 12–15 vezes</label>
+            <label><input type="radio" name="q7" value="D"> D) 20–25 vezes</label>
+            <label><input type="radio" name="q7" value="E"> E) Nunca (0)</label>
+          </div>
+        </fieldset>
+
+        <!-- 8 -->
+        <fieldset class="question" id="q8">
+          <h4>8. Ao perder 1 kg de peso durante exercício, aproximadamente quantos litros de água foram perdidos?</h4>
+          <div class="options">
+            <label><input type="radio" name="q8" value="A"> A) 0,1 L</label>
+            <label><input type="radio" name="q8" value="B"> B) 0,5 L</label>
+            <label><input type="radio" name="q8" value="C"> C) 1 L</label>
+            <label><input type="radio" name="q8" value="D"> D) 2 L</label>
+            <label><input type="radio" name="q8" value="E"> E) 5 L</label>
+          </div>
+        </fieldset>
+
+        <!-- 9 -->
+        <fieldset class="question" id="q9">
+          <h4>9. Uma dica prática para beber mais água sugerida no portal foi:</h4>
+          <div class="options">
+            <label><input type="radio" name="q9" value="A"> A) Evitar beber água pela manhã</label>
+            <label><input type="radio" name="q9" value="B"> B) Ter sempre uma garrafa reutilizável ao alcance</label>
+            <label><input type="radio" name="q9" value="C"> C) Beber só quando sentir sede extrema</label>
+            <label><input type="radio" name="q9" value="D"> D) Substituir água por refrigerante</label>
+            <label><input type="radio" name="q9" value="E"> E) Tomar banho frio para hidratar</label>
+          </div>
+        </fieldset>
+
+        <!-- 10 -->
+        <fieldset class="question" id="q10">
+          <h4>10. Sobre mitos: qual afirmação é considerada mito no portal?</h4>
+          <div class="options">
+            <label><input type="radio" name="q10" value="A"> A) "Tenho que beber 2 litros por dia, sempre."</label>
+            <label><input type="radio" name="q10" value="B"> B) "Beber água ajuda a cozinhar alimentos."</label>
+            <label><input type="radio" name="q10" value="C"> C) "Água é composta por H2O."</label>
+            <label><input type="radio" name="q10" value="D"> D) "Água mata bactérias instantaneamente."</label>
+            <label><input type="radio" name="q10" value="E"> E) "Água dá energia elétrica ao corpo."</label>
+          </div>
+        </fieldset>
+
+        <!-- 11 -->
+        <fieldset class="question" id="q11">
+          <h4>11. Qual bebida contribui para a hidratação, segundo o portal, embora água pura seja preferível?</h4>
+          <div class="options">
+            <label><input type="radio" name="q11" value="A"> A) Álcool destilado</label>
+            <label><input type="radio" name="q11" value="B"> B) Sucos naturais e chás</label>
+            <label><input type="radio" name="q11" value="C"> C) Óleo vegetal</label>
+            <label><input type="radio" name="q11" value="D"> D) Tinta à base de água</label>
+            <label><input type="radio" name="q11" value="E"> E) Gasolina</label>
+          </div>
+        </fieldset>
+
+        <!-- 12 -->
+        <fieldset class="question" id="q12">
+          <h4>12. Por que pessoas em uso de diuréticos precisam de atenção quanto à ingestão de líquidos?</h4>
+          <div class="options">
+            <label><input type="radio" name="q12" value="A"> A) Porque diuréticos impedem a absorção de minerais</label>
+            <label><input type="radio" name="q12" value="B"> B) Porque diuréticos aumentam a eliminação de líquidos</label>
+            <label><input type="radio" name="q12" value="C"> C) Porque diuréticos transformam água em glicose</label>
+            <label><input type="radio" name="q12" value="D"> D) Porque diuréticos tornam a água venenosa</label>
+            <label><input type="radio" name="q12" value="E"> E) Porque diuréticos reduzem a necessidade de sono</label>
+          </div>
+        </fieldset>
+
+        <!-- 13 -->
+        <fieldset class="question" id="q13">
+          <h4>13. Qual agência/reguladora foi citada como parceira no monitoramento dos mananciais do DF?</h4>
+          <div class="options">
+            <label><input type="radio" name="q13" value="A"> A) ANATEL</label>
+            <label><input type="radio" name="q13" value="B"> B) ADASA</label>
+            <label><input type="radio" name="q13" value="C"> C) IBAMA</label>
+            <label><input type="radio" name="q13" value="D"> D) INMET</label>
+            <label><input type="radio" name="q13" value="E"> E) ANVISA</label>
+          </div>
+        </fieldset>
+
+        <!-- 14 -->
+        <fieldset class="question" id="q14">
+          <h4>14. Segundo o texto sobre CAESB, qual é a primeira etapa do tratamento da água?</h4>
+          <div class="options">
+            <label><input type="radio" name="q14" value="A"> A) Desinfecção</label>
+            <label><input type="radio" name="q14" value="B"> B) Fluoretação</label>
+            <label><input type="radio" name="q14" value="C"> C) Captação</label>
+            <label><input type="radio" name="q14" value="D"> D) Distribuição</label>
+            <label><input type="radio" name="q14" value="E"> E) Armazenamento doméstico</label>
+          </div>
+        </fieldset>
+
+        <!-- 15 -->
+        <fieldset class="question" id="q15">
+          <h4>15. Na sequência de tratamento, o que é feito logo após coagulação/floculação?</h4>
+          <div class="options">
+            <label><input type="radio" name="q15" value="A"> A) Filtração imediatamente</label>
+            <label><input type="radio" name="q15" value="B"> B) Correção de pH</label>
+            <label><input type="radio" name="q15" value="C"> C) Decantação ou flotação (separação dos flocos)</label>
+            <label><input type="radio" name="q15" value="D"> D) Fluoretação</label>
+            <label><input type="radio" name="q15" value="E"> E) Engarrafamento</label>
+          </div>
+        </fieldset>
+
+        <!-- 16 -->
+        <fieldset class="question" id="q16">
+          <h4>16. Qual etapa serve para reter partículas mais finas após a decantação?</h4>
+          <div class="options">
+            <label><input type="radio" name="q16" value="A"> A) Coagulação</label>
+            <label><input type="radio" name="q16" value="B"> B) Filtração por material granular (areia)</label>
+            <label><input type="radio" name="q16" value="C"> C) Distribuição por adutora</label>
+            <label><input type="radio" name="q16" value="D"> D) Esterilização por calor</label>
+            <label><input type="radio" name="q16" value="E"> E) Etiquetagem</label>
+          </div>
+        </fieldset>
+
+        <!-- 17 -->
+        <fieldset class="question" id="q17">
+          <h4>17. Qual desinfetante é mencionado como geralmente aplicado pela CAESB?</h4>
+          <div class="options">
+            <label><input type="radio" name="q17" value="A"> A) Ácido sulfúrico</label>
+            <label><input type="radio" name="q17" value="B"> B) Cloro</label>
+            <label><input type="radio" name="q17" value="C"> C) Peróxido de glicose</label>
+            <label><input type="radio" name="q17" value="D"> D) Amônia pura</label>
+            <label><input type="radio" name="q17" value="E"> E) Glicerina</label>
+          </div>
+        </fieldset>
+
+        <!-- 18 -->
+        <fieldset class="question" id="q18">
+          <h4>18. Por que a CAESB pode ajustar o pH da água tratada?</h4>
+          <div class="options">
+            <label><input type="radio" name="q18" value="A"> A) Para melhorar o sabor de refrigerantes</label>
+            <label><input type="radio" name="q18" value="B"> B) Para evitar corrosão nas tubulações e garantir estabilidade química</label>
+            <label><input type="radio" name="q18" value="C"> C) Para aumentar a densidade da água</label>
+            <label><input type="radio" name="q18" value="D"> D) Para alterar a cor da água</label>
+            <label><input type="radio" name="q18" value="E"> E) Para criar espuma na torneira</label>
+          </div>
+        </fieldset>
+
+        <!-- 19 -->
+        <fieldset class="question" id="q19">
+          <h4>19. O que a CAESB mantém para realizar análises físico-químicas e bacteriológicas?</h4>
+          <div class="options">
+            <label><input type="radio" name="q19" value="A"> A) Uma fábrica de garrafas</label>
+            <label><input type="radio" name="q19" value="B"> B) Um laboratório central</label>
+            <label><input type="radio" name="q19" value="C"> C) Um time de meteorologia</label>
+            <label><input type="radio" name="q19" value="D"> D) Um depósito de areia</label>
+            <label><input type="radio" name="q19" value="E"> E) Uma biblioteca pública</label>
+          </div>
+        </fieldset>
+
+        <!-- 20 -->
+        <fieldset class="question" id="q20">
+          <h4>20. Após o tratamento, onde a água potável é armazenada para atender variações de consumo?</h4>
+          <div class="options">
+            <label><input type="radio" name="q20" value="A"> A) Em latas nas ruas</label>
+            <label><input type="radio" name="q20" value="B"> B) Em reservatórios</label>
+            <label><input type="radio" name="q20" value="C"> C) Em sacos plásticos individuais</label>
+            <label><input type="radio" name="q20" value="D"> D) Em baldes descartáveis</label>
+            <label><input type="radio" name="q20" value="E"> E) Em garrafas plásticas enterradas</label>
+          </div>
+        </fieldset>
+
+        <!-- 21 -->
+        <fieldset class="question" id="q21">
+          <h4>21. Como a água é transportada das estações até os bairros?</h4>
+          <div class="options">
+            <label><input type="radio" name="q21" value="A"> A) Caminhando sozinha</label>
+            <label><input type="radio" name="q21" value="B"> B) Por adutoras e bombas</label>
+            <label><input type="radio" name="q21" value="C"> C) Em pequenas canoas</label>
+            <label><input type="radio" name="q21" value="D"> D) Através de cabos elétricos</label>
+            <label><input type="radio" name="q21" value="E"> E) Por drones</label>
+          </div>
+        </fieldset>
+
+        <!-- 22 -->
+        <fieldset class="question" id="q22">
+          <h4>22. Durante alertas ou manutenção, qual orientação a CAESB pode emitir temporariamente?</h4>
+          <div class="options">
+            <label><input type="radio" name="q22" value="A"> A) Beber água gelada apenas</label>
+            <label><input type="radio" name="q22" value="B"> B) Fervê-la ou filtrá-la antes de consumir</label>
+            <label><input type="radio" name="q22" value="C"> C) Misturar com bebida alcoólica</label>
+            <label><input type="radio" name="q22" value="D"> D) Jogar água fora sem usá-la</label>
+            <label><input type="radio" name="q22" value="E"> E) Armazenar água ao sol por 24 horas</label>
+          </div>
+        </fieldset>
+
+        <!-- 23 -->
+        <fieldset class="question" id="q23">
+          <h4>23. Qual é a base da fórmula usada pela calculadora do portal para estimar ingestão diária?</h4>
+          <div class="options">
+            <label><input type="radio" name="q23" value="A"> A) 10 mL/kg</label>
+            <label><input type="radio" name="q23" value="B"> B) 20 mL/kg</label>
+            <label><input type="radio" name="q23" value="C"> C) 35 mL/kg</label>
+            <label><input type="radio" name="q23" value="D"> D) 100 mL/kg</label>
+            <label><input type="radio" name="q23" value="E"> E) 1 mL/kg</label>
+          </div>
+        </fieldset>
+
+        <!-- 24 -->
+        <fieldset class="question" id="q24">
+          <h4>24. Como a calculadora ajusta a estimativa para crianças (idade &lt;12) no código atual?</h4>
+          <div class="options">
+            <label><input type="radio" name="q24" value="A"> A) Diminui 50%</label>
+            <label><input type="radio" name="q24" value="B"> B) Mantém igual (sem ajuste)</label>
+            <label><input type="radio" name="q24" value="C"> C) Multiplica por 1.1 (aumenta 10%)</label>
+            <label><input type="radio" name="q24" value="D"> D) Zera o valor</label>
+            <label><input type="radio" name="q24" value="E"> E) Multiplica por 0.5</label>
+          </div>
+        </fieldset>
+
+        <!-- 25 -->
+        <fieldset class="question" id="q25">
+          <h4>25. Qual ajuste a calculadora adiciona para atividade física moderada?</h4>
+          <div class="options">
+            <label><input type="radio" name="q25" value="A"> A) +100 mL</label>
+            <label><input type="radio" name="q25" value="B"> B) +300 mL</label>
+            <label><input type="radio" name="q25" value="C"> C) +700 mL</label>
+            <label><input type="radio" name="q25" value="D"> D) +2000 mL</label>
+            <label><input type="radio" name="q25" value="E"> E) -500 mL</label>
+          </div>
+        </fieldset>
+
+        <!-- 26 -->
+        <fieldset class="question" id="q26">
+          <h4>26. Que acréscimo a calculadora aplica em clima “muito quente”?</h4>
+          <div class="options">
+            <label><input type="radio" name="q26" value="A"> A) +100 mL</label>
+            <label><input type="radio" name="q26" value="B"> B) +500 mL</label>
+            <label><input type="radio" name="q26" value="C"> C) +1.000 mL</label>
+            <label><input type="radio" name="q26" value="D"> D) -200 mL</label>
+            <label><input type="radio" name="q26" value="E"> E) +5.000 mL</label>
+          </div>
+        </fieldset>
+
+        <!-- 27 -->
+        <fieldset class="question" id="q27">
+          <h4>27. Qual incremento é aplicado se a pessoa for gestante/lactante, segundo a calculadora?</h4>
+          <div class="options">
+            <label><input type="radio" name="q27" value="A"> A) +100 mL</label>
+            <label><input type="radio" name="q27" value="B"> B) +600 mL</label>
+            <label><input type="radio" name="q27" value="C"> C) -600 mL</label>
+            <label><input type="radio" name="q27" value="D"> D) +2.000 mL</label>
+            <label><input type="radio" name="q27" value="E"> E) Nenhum ajuste</label>
+          </div>
+        </fieldset>
+
+        <!-- 28 -->
+        <fieldset class="question" id="q28">
+          <h4>28. Em que unidades a calculadora apresenta o resultado final?</h4>
+          <div class="options">
+            <label><input type="radio" name="q28" value="A"> A) Apenas em copos de 100 mL</label>
+            <label><input type="radio" name="q28" value="B"> B) Apenas em gramas</label>
+            <label><input type="radio" name="q28" value="C"> C) Em litros e em número aproximado de copos de 250 mL</label>
+            <label><input type="radio" name="q28" value="D"> D) Em horas por dia</label>
+            <label><input type="radio" name="q28" value="E"> E) Em porcentagem de gordura corporal</label>
+          </div>
+        </fieldset>
+
+        <!-- 29 -->
+        <fieldset class="question" id="q29">
+          <h4>29. Qual indicador doméstico simples é recomendado para evitar recontaminação da água em casa?</h4>
+          <div class="options">
+            <label><input type="radio" name="q29" value="A"> A) Pintar a caixa d’água de vermelho</label>
+            <label><input type="radio" name="q29" value="B"> B) Manter caixas d’água limpas e bem tampadas</label>
+            <label><input type="radio" name="q29" value="C"> C) Colocar areia dentro da caixa d’água</label>
+            <label><input type="radio" name="q29" value="D"> D) Não usar a caixa d’água nunca</label>
+            <label><input type="radio" name="q29" value="E"> E) Expor a caixa d’água ao sol sem tampa</label>
+          </div>
+        </fieldset>
+
+        <!-- 30 -->
+        <fieldset class="question" id="q30">
+          <h4>30. Segundo o portal, qual unidade local você deve procurar em Ceilândia quando houver sinais graves de desidratação?</h4>
+          <div class="options">
+            <label><input type="radio" name="q30" value="A"> A) Biblioteca municipal</label>
+            <label><input type="radio" name="q30" value="B"> B) Unidade Básica de Saúde (UBS) local</label>
+            <label><input type="radio" name="q30" value="C"> C) Academia da cidade</label>
+            <label><input type="radio" name="q30" value="D"> D) Agência bancária</label>
+            <label><input type="radio" name="q30" value="E"> E) Delegacia de polícia</label>
+          </div>
+        </fieldset>
+
+        <!-- Ações -->
+        <div class="controls">
+          <button type="button" id="submitBtn" class="btn-link">Enviar</button>
+          <button type="reset" id="resetBtn" class="btn-link">Limpar respostas</button>
+          <button type="button" id="showAnswersBtn" class="btn-link">Mostrar gabarito</button>
+        </div>
+
+        <div id="result" class="result-box" aria-live="polite" hidden></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Portal: Hidratação e Saúde — agua.daniloprofissional.com.br | Desenvolvido por Danilo Queiroz</p>
+    </div>
+  </footer>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>

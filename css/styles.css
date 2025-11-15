@@ -1,0 +1,306 @@
+/* ===========================
+    RESET E BASE GLOBAL
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Tons de azul – tema água */
+  --azul-escuro: #0a3d62;
+  --azul-medio: #1e90ff;
+  --azul-claro: #dff3ff;
+  --azul-suave: #eaf7ff;
+  --branco: #ffffff;
+  --cinza: #555;
+  --cinza-claro: #888;
+
+  /* Tipografia */
+  --fonte-principal: "Inter", Arial, sans-serif;
+
+  /* Largura */
+  --largura-max: 1100px;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  line-height: 1.7;
+  background: var(--azul-suave);
+  color: var(--cinza);
+}
+
+/* ===========================
+    CONTAINERS E SEÇÕES
+=========================== */
+.container {
+  width: 90%;
+  max-width: var(--largura-max);
+  margin: auto;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  color: var(--azul-escuro);
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.section p,
+.section li,
+.section dd,
+.section dt {
+  font-size: 1.08rem;
+  margin-bottom: 12px;
+}
+
+/* ===========================
+    CABEÇALHO E MENU
+=========================== */
+header {
+  background: var(--azul-escuro);
+  padding: 20px 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  color: var(--branco);
+  font-size: 1.6rem;
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: var(--branco);
+  font-size: 1.05rem;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.main-menu a:hover,
+.main-menu a[aria-current="page"] {
+  background: var(--azul-medio);
+}
+
+/* Responsividade do menu */
+@media (max-width: 700px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .main-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* ===========================
+    LISTAS E DETALHES
+=========================== */
+dl dt {
+  font-weight: bold;
+  color: var(--azul-escuro);
+}
+
+ul {
+  padding-left: 22px;
+}
+
+/* ===========================
+    CALCULADORA
+=========================== */
+.calc-section {
+  background: var(--azul-claro);
+  padding: 50px;
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.07);
+}
+
+.calc-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.calc-form label {
+  font-weight: bold;
+  color: var(--azul-escuro);
+}
+
+.calc-form input,
+.calc-form select {
+  padding: 12px;
+  border: 1px solid var(--azul-medio);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.calc-form input:focus,
+.calc-form select:focus {
+  border-color: var(--azul-escuro);
+}
+
+.calc-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.calc-actions button {
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--branco);
+  background: var(--azul-medio);
+  transition: 0.3s;
+}
+
+.calc-actions button:hover {
+  background: var(--azul-escuro);
+}
+
+.calc-result {
+  margin-top: 25px;
+  background: var(--branco);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid var(--azul-medio);
+}
+
+.calc-result p {
+  margin-bottom: 10px;
+}
+
+/* ===========================
+    CARD DO DESENVOLVEDOR
+=========================== */
+.dev-section {
+  margin-top: 60px;
+}
+
+.dev-card {
+  display: flex;
+  gap: 20px;
+  background: var(--branco);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+  align-items: center;
+}
+
+.dev-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid var(--azul-medio);
+}
+
+.dev-content p {
+  margin-bottom: 12px;
+}
+
+.btn-link {
+  display: inline-block;
+  background: var(--azul-medio);
+  color: var(--branco);
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-link:hover {
+  background: var(--azul-escuro);
+}
+
+/* Responsividade para o card */
+@media (max-width: 700px) {
+  .dev-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dev-photo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* ===========================
+    RODAPÉ
+=========================== */
+.site-footer {
+  background: var(--azul-escuro);
+  color: var(--branco);
+  padding: 25px 0;
+  margin-top: 80px;
+}
+
+.footer-inner {
+  text-align: center;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+/* ===========================
+    AJUSTES PEQUENOS
+=========================== */
+.small-note {
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.small ul li {
+  margin-bottom: 5px;
+}
+
+.section.small {
+  padding-top: 20px;
+}
+
+/* Ajuste geral das imagens das seções */
+.section-img {
+    width: 100%;
+    height: auto;
+    max-height: 260px;   /* Reduz a altura vertical */
+    object-fit: cover;   /* Mantém a imagem visualmente bonita */
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+/* Em telas pequenas */
+@media (max-width: 768px) {
+    .section-img {
+        max-height: 200px;  /* Menor ainda no celular */
+    }
+}
+
+/* Em telas muito grandes */
+@media (min-width: 1400px) {
+    .section-img {
+        max-height: 320px; /* Evita que fiquem pequenas demais em ultrawide */
+    }
+}
